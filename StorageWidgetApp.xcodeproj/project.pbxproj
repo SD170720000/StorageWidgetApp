@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0000000000000000000001 /* StorageWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000101 /* StorageWidgetApp.swift */; };
+		8B0000000000000000000002 /* DriveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000102 /* DriveInfo.swift */; };
+		8B0000000000000000000003 /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000103 /* StorageSettings.swift */; };
+		8B0000000000000000000004 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000104 /* AppConstants.swift */; };
+		8B0000000000000000000005 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000105 /* StorageService.swift */; };
+		8B0000000000000000000006 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000106 /* SettingsStore.swift */; };
+		8B0000000000000000000007 /* CapacityNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000107 /* CapacityNotificationService.swift */; };
+		8B0000000000000000000008 /* StorageDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000108 /* StorageDashboardViewModel.swift */; };
+		8B0000000000000000000009 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000109 /* VisualEffectView.swift */; };
+		8B000000000000000000000A /* StorageProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000000000000000000010A /* StorageProgressBar.swift */; };
+		8B000000000000000000000B /* DriveIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000000000000000000010B /* DriveIconView.swift */; };
+		8B000000000000000000000C /* DriveRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000000000000000000010C /* DriveRowView.swift */; };
+		8B000000000000000000000D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000000000000000000010D /* SettingsView.swift */; };
+		8B000000000000000000000E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B000000000000000000010E /* ContentView.swift */; };
+		8B0000000000000000000011 /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000130 /* WidgetAssets.xcassets */; };
+		8B000000000000000000000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B000000000000000000010F /* Assets.xcassets */; };
+		8B0000000000000000000010 /* StorageWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000120 /* StorageWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B0000000000000000000021 /* DriveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000102 /* DriveInfo.swift */; };
+		8B0000000000000000000022 /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000103 /* StorageSettings.swift */; };
+		8B0000000000000000000023 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000104 /* AppConstants.swift */; };
+		8B0000000000000000000024 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000105 /* StorageService.swift */; };
+		8B0000000000000000000025 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000106 /* SettingsStore.swift */; };
+		8B0000000000000000000026 /* StorageWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000111 /* StorageWidgetEntry.swift */; };
+		8B0000000000000000000027 /* WidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000112 /* WidgetTimelineProvider.swift */; };
+		8B0000000000000000000028 /* StorageWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000113 /* StorageWidgetViews.swift */; };
+		8B0000000000000000000029 /* StorageWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0000000000000000000114 /* StorageWidgetsBundle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B0000000000000000000030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0000000000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0000000000000000000041;
+			remoteInfo = StorageWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B0000000000000000000052 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B0000000000000000000010 /* StorageWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B0000000000000000000100 /* StorageWidgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorageWidgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0000000000000000000101 /* StorageWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidgetApp.swift; sourceTree = "<group>"; };
+		8B0000000000000000000102 /* DriveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveInfo.swift; sourceTree = "<group>"; };
+		8B0000000000000000000103 /* StorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettings.swift; sourceTree = "<group>"; };
+		8B0000000000000000000104 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8B0000000000000000000105 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		8B0000000000000000000106 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		8B0000000000000000000107 /* CapacityNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityNotificationService.swift; sourceTree = "<group>"; };
+		8B0000000000000000000108 /* StorageDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDashboardViewModel.swift; sourceTree = "<group>"; };
+		8B0000000000000000000109 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		8B000000000000000000010A /* StorageProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProgressBar.swift; sourceTree = "<group>"; };
+		8B000000000000000000010B /* DriveIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveIconView.swift; sourceTree = "<group>"; };
+		8B000000000000000000010C /* DriveRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveRowView.swift; sourceTree = "<group>"; };
+		8B000000000000000000010D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8B000000000000000000010E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B0000000000000000000130 /* WidgetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WidgetAssets.xcassets; sourceTree = "<group>"; };
+		8B000000000000000000010F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B0000000000000000000110 /* StorageWidgetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StorageWidgetApp.entitlements; sourceTree = "<group>"; };
+		8B0000000000000000000111 /* StorageWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidgetEntry.swift; sourceTree = "<group>"; };
+		8B0000000000000000000112 /* WidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimelineProvider.swift; sourceTree = "<group>"; };
+		8B0000000000000000000113 /* StorageWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidgetViews.swift; sourceTree = "<group>"; };
+		8B0000000000000000000114 /* StorageWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidgetsBundle.swift; sourceTree = "<group>"; };
+		8B0000000000000000000115 /* StorageWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StorageWidgetExtension.entitlements; sourceTree = "<group>"; };
+		8B0000000000000000000116 /* StorageWidgetExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StorageWidgetExtension-Info.plist"; sourceTree = "<group>"; };
+		8B0000000000000000000120 /* StorageWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StorageWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B0000000000000000000050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0000000000000000000055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0000000000000000000200 = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000201 /* StorageWidgetApp */,
+				8B0000000000000000000209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000201 /* StorageWidgetApp */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000101 /* StorageWidgetApp.swift */,
+				8B0000000000000000000202 /* Models */,
+				8B0000000000000000000203 /* Services */,
+				8B0000000000000000000204 /* ViewModels */,
+				8B0000000000000000000205 /* Views */,
+				8B0000000000000000000206 /* Widgets */,
+				8B0000000000000000000207 /* Utilities */,
+				8B0000000000000000000208 /* Resources */,
+			);
+			path = StorageWidgetApp;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000202 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000102 /* DriveInfo.swift */,
+				8B0000000000000000000103 /* StorageSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000203 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000105 /* StorageService.swift */,
+				8B0000000000000000000106 /* SettingsStore.swift */,
+				8B0000000000000000000107 /* CapacityNotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000204 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000108 /* StorageDashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000109 /* VisualEffectView.swift */,
+				8B000000000000000000010A /* StorageProgressBar.swift */,
+				8B000000000000000000010B /* DriveIconView.swift */,
+				8B000000000000000000010C /* DriveRowView.swift */,
+				8B000000000000000000010D /* SettingsView.swift */,
+				8B000000000000000000010E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000206 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000111 /* StorageWidgetEntry.swift */,
+				8B0000000000000000000112 /* WidgetTimelineProvider.swift */,
+				8B0000000000000000000113 /* StorageWidgetViews.swift */,
+				8B0000000000000000000114 /* StorageWidgetsBundle.swift */,
+				8B0000000000000000000115 /* StorageWidgetExtension.entitlements */,
+				8B0000000000000000000116 /* StorageWidgetExtension-Info.plist */,
+				8B0000000000000000000130 /* WidgetAssets.xcassets */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000207 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000104 /* AppConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000208 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B000000000000000000010F /* Assets.xcassets */,
+				8B0000000000000000000110 /* StorageWidgetApp.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B0000000000000000000209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B0000000000000000000100 /* StorageWidgetApp.app */,
+				8B0000000000000000000120 /* StorageWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B0000000000000000000040 /* StorageWidgetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0000000000000000000070 /* Build configuration list for PBXNativeTarget "StorageWidgetApp" */;
+			buildPhases = (
+				8B0000000000000000000051 /* Sources */,
+				8B0000000000000000000050 /* Frameworks */,
+				8B0000000000000000000053 /* Resources */,
+				8B0000000000000000000052 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B0000000000000000000031 /* PBXTargetDependency */,
+			);
+			name = StorageWidgetApp;
+			productName = StorageWidgetApp;
+			productReference = 8B0000000000000000000100 /* StorageWidgetApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B0000000000000000000041 /* StorageWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0000000000000000000071 /* Build configuration list for PBXNativeTarget "StorageWidgetExtension" */;
+			buildPhases = (
+				8B0000000000000000000056 /* Resources */,
+				8B0000000000000000000054 /* Sources */,
+				8B0000000000000000000055 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageWidgetExtension;
+			productName = StorageWidgetExtension;
+			productReference = 8B0000000000000000000120 /* StorageWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B0000000000000000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					8B0000000000000000000040 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					8B0000000000000000000041 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 8B0000000000000000000061 /* Build configuration list for PBXProject "StorageWidgetApp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B0000000000000000000200;
+			productRefGroup = 8B0000000000000000000209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B0000000000000000000040 /* StorageWidgetApp */,
+				8B0000000000000000000041 /* StorageWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B0000000000000000000053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B000000000000000000000F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0000000000000000000056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0000000000000000000011 /* WidgetAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B0000000000000000000051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0000000000000000000001 /* StorageWidgetApp.swift in Sources */,
+				8B0000000000000000000002 /* DriveInfo.swift in Sources */,
+				8B0000000000000000000003 /* StorageSettings.swift in Sources */,
+				8B0000000000000000000004 /* AppConstants.swift in Sources */,
+				8B0000000000000000000005 /* StorageService.swift in Sources */,
+				8B0000000000000000000006 /* SettingsStore.swift in Sources */,
+				8B0000000000000000000007 /* CapacityNotificationService.swift in Sources */,
+				8B0000000000000000000008 /* StorageDashboardViewModel.swift in Sources */,
+				8B0000000000000000000009 /* VisualEffectView.swift in Sources */,
+				8B000000000000000000000A /* StorageProgressBar.swift in Sources */,
+				8B000000000000000000000B /* DriveIconView.swift in Sources */,
+				8B000000000000000000000C /* DriveRowView.swift in Sources */,
+				8B000000000000000000000D /* SettingsView.swift in Sources */,
+				8B000000000000000000000E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0000000000000000000054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0000000000000000000021 /* DriveInfo.swift in Sources */,
+				8B0000000000000000000022 /* StorageSettings.swift in Sources */,
+				8B0000000000000000000023 /* AppConstants.swift in Sources */,
+				8B0000000000000000000024 /* StorageService.swift in Sources */,
+				8B0000000000000000000025 /* SettingsStore.swift in Sources */,
+				8B0000000000000000000026 /* StorageWidgetEntry.swift in Sources */,
+				8B0000000000000000000027 /* WidgetTimelineProvider.swift in Sources */,
+				8B0000000000000000000028 /* StorageWidgetViews.swift in Sources */,
+				8B0000000000000000000029 /* StorageWidgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B0000000000000000000031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B0000000000000000000041 /* StorageWidgetExtension */;
+			targetProxy = 8B0000000000000000000030 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8B0000000000000000000080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B0000000000000000000081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8B0000000000000000000082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StorageWidgetApp/Resources/StorageWidgetApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQZ8B39KX3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Storage Widget";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhudas.StorageWidgetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8B0000000000000000000083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StorageWidgetApp/Resources/StorageWidgetApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQZ8B39KX3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Storage Widget";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhudas.StorageWidgetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		8B0000000000000000000084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StorageWidgetApp/Widgets/StorageWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQZ8B39KX3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "StorageWidgetApp/Widgets/StorageWidgetExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhudas.StorageWidgetApp.StorageWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8B0000000000000000000085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StorageWidgetApp/Widgets/StorageWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQZ8B39KX3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "StorageWidgetApp/Widgets/StorageWidgetExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhudas.StorageWidgetApp.StorageWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B0000000000000000000061 /* Build configuration list for PBXProject "StorageWidgetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0000000000000000000080 /* Debug */,
+				8B0000000000000000000081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0000000000000000000070 /* Build configuration list for PBXNativeTarget "StorageWidgetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0000000000000000000082 /* Debug */,
+				8B0000000000000000000083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0000000000000000000071 /* Build configuration list for PBXNativeTarget "StorageWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0000000000000000000084 /* Debug */,
+				8B0000000000000000000085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B0000000000000000000060 /* Project object */;
+}

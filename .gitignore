@@ -1,0 +1,45 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcbkptlist
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Build output
+build/
+dist/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods (if ever added)
+Pods/
+Podfile.lock
+
+# Fastlane (if ever added)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Secrets — never commit
+*.p12
+*.mobileprovision
+*.provisionprofile
+ExportOptions.plist
+*.xcuserstate
+xcuserdata/
