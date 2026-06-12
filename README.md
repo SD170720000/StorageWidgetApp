@@ -8,7 +8,7 @@ Built with SwiftUI + WidgetKit. Supports small, medium, and large widget sizes.
 
 ## Download
 
-**[⬇ Download StorageWidgetApp-v1.0.0.dmg](https://github.com/SD170720000/StorageWidgetApp/releases/download/v1.0.0/StorageWidgetApp-v1.0.0.dmg)**
+**[⬇ Download StorageWidgetApp-v1.0.1.dmg](https://github.com/SD170720000/StorageWidgetApp/releases/download/v1.0.1/StorageWidgetApp-v1.0.1.dmg)**
 
 > macOS 15 Sequoia or later required.
 
@@ -29,7 +29,7 @@ Built with SwiftUI + WidgetKit. Supports small, medium, and large widget sizes.
 
 ## Install — Pre-built download
 
-1. **[Download the DMG](https://github.com/SD170720000/StorageWidgetApp/releases/download/v1.0.0/StorageWidgetApp-v1.0.0.dmg)**
+1. **[Download the DMG](https://github.com/SD170720000/StorageWidgetApp/releases/download/v1.0.1/StorageWidgetApp-v1.0.1.dmg)**
 2. Open the DMG and drag `StorageWidgetApp.app` → **Applications**
 3. Open **Terminal** and run this once to clear the macOS quarantine flag:
    ```bash
@@ -121,8 +121,8 @@ Tag a version and push — GitHub Actions builds the app, packages it as a ZIP,
 and publishes a GitHub Release automatically:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.1
+git push origin v1.0.1
 ```
 
 ---

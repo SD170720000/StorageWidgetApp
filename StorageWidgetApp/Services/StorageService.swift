@@ -56,9 +56,9 @@ final class StorageService: StorageServicing, @unchecked Sendable {
 
     func eject(_ drive: DriveInfo) async throws {
         let url = URL(fileURLWithPath: drive.mountPath)
-        var error: NSError?
-        let ok = NSWorkspace.shared.unmountAndEjectDevice(at: url, error: &error)
-        guard ok else {
+        do {
+            try NSWorkspace.shared.unmountAndEjectDevice(at: url)
+        } catch {
             throw StorageServiceError.ejectFailed(drive.name)
         }
     }
