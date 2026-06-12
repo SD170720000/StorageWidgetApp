@@ -1,0 +1,66 @@
+name: Release
+
+# Trigger: push a version tag, e.g.  git tag v1.0.0 && git push --tags
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write   # needed to create GitHub Releases
+
+jobs:
+  build-and-release:
+    name: Build DMG & publish release
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # needed for git describe
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
+
+      - name: Build (ad-hoc signed)
+        run: |
+          xcodebuild clean build \
+            -scheme StorageWidgetApp \
+            -configuration Release \
+            -derivedDataPath /tmp/StorageWidgetBuild \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=YES \
+            CODE_SIGNING_ALLOWED=YES \
+            DEVELOPMENT_TEAM=""
+
+      - name: Package as ZIP
+        run: |
+          APP="/tmp/StorageWidgetBuild/Build/Products/Release/StorageWidgetApp.app"
+          ZIP="StorageWidgetApp-${{ github.ref_name }}.zip"
+          ditto -c -k --keepParent "$APP" "$ZIP"
+          echo "ZIP=$ZIP" >> "$GITHUB_ENV"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "StorageWidgetApp ${{ github.ref_name }}"
+          tag_name: ${{ github.ref_name }}
+          generate_release_notes: true
+          files: ${{ env.ZIP }}
+          body: |
+            ## Install (pre-built)
+
+            > **Note:** This build is ad-hoc signed — macOS will quarantine it on first download.
+            > Run the one-liner below to clear the flag, then open normally.
+
+            1. Download `StorageWidgetApp-${{ github.ref_name }}.zip` and unzip
+            2. Move `StorageWidgetApp.app` to `/Applications`
+            3. Open **Terminal** and run:
+               ```bash
+               xattr -cr /Applications/StorageWidgetApp.app
+               ```
+            4. Open the app, then add the widget via **Edit Widgets**
+
+            > **Full settings sync** between the app and widget requires building from source
+            > with your own Team ID. See [README → Build from Source](https://github.com/SD170720000/StorageWidgetApp#build-from-source).
