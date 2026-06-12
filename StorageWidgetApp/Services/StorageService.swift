@@ -1,3 +1,4 @@
+import AppKit
 import Darwin
 import Foundation
 
@@ -50,21 +51,16 @@ final class StorageService: StorageServicing, @unchecked Sendable {
             driveInfo(for: url, keys: keys)
         }
         .filter { $0.totalBytes > 0 }
+        .filter { !isDiskImage(at: $0.mountPath) }
     }
 
     func eject(_ drive: DriveInfo) async throws {
-        try await Task.detached(priority: .userInitiated) {
-            let process = Process()
-            process.executableURL = URL(fileURLWithPath: "/usr/sbin/diskutil")
-            process.arguments = ["eject", drive.mountPath]
-
-            try process.run()
-            process.waitUntilExit()
-
-            guard process.terminationStatus == 0 else {
-                throw StorageServiceError.ejectFailed(drive.name)
-            }
-        }.value
+        let url = URL(fileURLWithPath: drive.mountPath)
+        var error: NSError?
+        let ok = NSWorkspace.shared.unmountAndEjectDevice(at: url, error: &error)
+        guard ok else {
+            throw StorageServiceError.ejectFailed(drive.name)
+        }
     }
 
     private func driveInfo(for url: URL, keys: Set<URLResourceKey>) -> DriveInfo? {
@@ -129,6 +125,14 @@ final class StorageService: StorageServicing, @unchecked Sendable {
         }
 
         return (totalBytes, max(freeBytes, 0))
+    }
+
+    private func isDiskImage(at path: String) -> Bool {
+        var stats = statfs()
+        guard statfs(path, &stats) == 0 else { return false }
+        // DMGs are always mounted read-only; the boot volume at "/" is never read-only this way
+        let isReadOnly = (stats.f_flags & UInt32(bitPattern: MNT_RDONLY)) != 0
+        return isReadOnly && path != "/"
     }
 
     private func stableIdentifier(for url: URL, values: URLResourceValues) -> String {
